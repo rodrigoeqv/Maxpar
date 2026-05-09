@@ -1,0 +1,60 @@
+# --- Dados ----------------------------------------------------------------
+# CSV original (300 MB) e dados intermediários não vão para o git
+assets/*.csv
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# --- Ambiente virtual -----------------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Jupyter --------------------------------------------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- Modelos serializados (regeneráveis) ----------------------------------
+*.pkl
+*.joblib
+*.h5
+
+# --- Caches ---------------------------------------------------------------
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- IDE ------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+
+# --- Arquivos de trabalho temporários ------------------------------------
+.tmp_nb_md/
+scripts/apply_nb_markdown.py
+
+# --- Claude Code (estado local do agente) ---------------------------------
+.claude/
+plans/
+
+# --- OS -------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs -----------------------------------------------------------------
+*.log
+logs/
